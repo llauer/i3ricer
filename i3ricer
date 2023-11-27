@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#author Larry Lauer
+#This simple script with install i3-gaps, sxhkd, and install i3 rice.
+
+#Dependencies and i3-gaps
+sudo pacman -S --noconfirm i3-gaps sxhkd picom alacritty termite dmenu rofi i3lock-color flameshot feh yay-bin
+
+#AUR packages
+yay -S --noconfirm polybar ttf-hack-nerd 
+
+#Download dots
+git clone https://github.com/mtwb47/i3stuff.git
+
+#Moving stuff
+
+cd i3stuff
+cp -r polybar i3 ~/.config
+sudo cp i3as.sh /usr/local/bin #script for autostart
+
+rm -r i3stuff
+echo "Reboot or Logout"
