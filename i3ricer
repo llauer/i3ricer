@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #author Larry Lauer
-#This simple script with install i3-gaps, sxhkd, and install i3 rice.
+#This simple script with install i3-gaps, sxhkd, and install Matt Webbers Dots from the linuxcast. Thanks Matt for the initial starting script.
 
 #Dependencies and i3-gaps
 sudo pacman -S --noconfirm i3-gaps sxhkd picom alacritty termite dmenu rofi i3lock-color flameshot feh yay-bin
